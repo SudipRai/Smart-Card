@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	 <link rel="stylesheet" type="text/css" href="{% static 'styles/style1.css' %}">
+  <link rel="stylesheet" href="{% static 'styles/bootstrap.min.css' %}">
+  <script src="{% static 'js/jquery-3.4.1.slim.min.js' %}"></script>
+  <script src="{% static 'js/all.js' %}"></script>
+  <script src="{% static 'js/jquery-3.4.1.popper.min.js' %}" ></script>
+  <script src="{% static 'js/jquery-3.4.1.bootstrap.min.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'styles/all.css' %}" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+</head>
+<body>
+  <nav class="navbar fixed-top justify-content-center">
+  <ul class="">
+    <li class="">
+      <h3>Hello!</h3>
+    </li>
+    
+  </ul>
+</nav>
+  {% for p in profile %}
+
+<div class="container-fluid">
+	<div class="profile">
+		<img src="{% static '/image/' %}{{p.image}}" id="profile-img">
+    <h3 class="name">{{p.fullname}}</h3>
+        <p class="job"> {{p.bio}}</p>
+        <div class="office-name">
+        <p><b>{{p.companyname}}</b></p>
+        </div>
+        <button type="button" id="btn"><i class="fa fa-download"></i>  Add to Contact</button>
+        <hr class="hr-2">
+        <div class="contact-info">
+            <div class="item">
+               <i class="icon fas fa-home"></i>
+                {{p.address}}
+            </div>
+            <div class="item">
+                <i class="icon fas fa-phone"></i>
+                {{p.contact}}
+            </div>
+            <div class="item">
+              <i class="icon fas fa-envelope"></i>
+                {{p.email}}
+              </div>
+        </div>
+         <hr class="hr-2">
+         <div class="wrapper">
+             <form action="">   
+            <button id="btn-facebook" type="submit" class="button">
+            <i class="fab fa-facebook"></i><a href="{{p.facebook}}">Facebook </a>
+            </button>
+          </form>
+                   
+            <form>      
+            <button id="btn-instagram" type="button" class="button" >
+            <i class="fab fa-instagram"></i><a href="{{p.instagram}}"> Instagram</a>
+            </button>
+            </form>
+                   
+                   
+             <form>   
+            <button id="btn-twitter" type="button" class="button" >
+            <i class="fab fa-twitter"></i><a href="{{p.twitter}}"> Twitter</a>
+            </button>
+          </form>
+    
+                  
+                   
+            <form>    
+            <button id="btn-gmail" type="button" class="button" >
+            <i class="fas fa-envelope-square"></i><a href="{{p.google}}"> Gmail</a>            
+          </button>
+          </form>
+    
+                   
+             <form>     
+            <button id="btn-whatsapp" type="button" class="button" >
+            <i class="fab fa-whatsapp"></i><a href="{{p.whatsapp}}">  Whatsapp</a>
+            </button>
+          </form>
+          <form>
+             <button id="btn-youtube" type="button" class="button" >
+            <i class="fab fa-youtube"></i><a href="{{p.youtube}}">  Youtube</a>
+            </button> 
+            </form>
+      </div>
+      {% endfor %}
+              <hr class="hr-2">
+              <p>Powered by Smart</p>
+		
+	</div>
+</div>
+</body>
+</html>

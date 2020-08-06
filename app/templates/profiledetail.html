@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<a href="/addprofile" class="btn btn-primary btn-addprofile">Add Profile</a>
+<div class="table-responsive">
+<table id="table" class="table">
+	<tr>
+			<th>ID</th>
+			<th>IMAGE</th>
+			<th>FULL NAME</th>
+			<th>Address</th>
+			<th>COMPANY NAME</th>
+			<th>BIO</th>
+			<th>EMAIL</th>
+			<th>CONTACT</th>
+			<th>WEBSITE</th>
+			<th>INSTAGRAM</th>
+			<th>FACEBOOK</th>
+			<th>TWITTER</th>
+			<th>GOOGLE/th>
+			<th>YOUTUBE</th>
+
+	</tr>
+{% for profile in profiles %}
+	<tr>
+			<td>{{profile.id}}</td>
+			{% load static %}
+			<td><img width="50" src="{% static '/image/' %}{{profile.image}}"/></td>
+			<td>{{profile.fullname}}</td>
+			<td>{{profile.address}}</td>
+			<td>{{profile.companyname}}</td>
+			<td>{{profile.bio}}</td>
+			<td>{{profile.email}}</td>
+			<td>{{profile.contact}}</td>
+			<td>{{profile.website}}</td>
+			<td>{{profile.instagram}}</td>
+			<td>{{profile.facebook}}</td>
+			<td>{{profile.twitter}}</td>
+			<td>{{profile.google}}</td>
+			<td>{{profile.youtube}}</td>
+	</tr>
+{% endfor %}
+</table>
+</div>
+<script>
+	$(".dash-sidebar").find("active").removeClass("");
+		$("#admin-detail").addClass("active");
+</script>
+{% endblock content %}
+

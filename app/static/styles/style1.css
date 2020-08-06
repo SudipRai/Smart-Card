@@ -1,0 +1,211 @@
+.navbar
+{
+	background-color: #F5F5F5;
+	text-align: center;
+}
+.navbar ul
+{
+	display: flex;
+}
+.navbar ul li
+{
+	list-style: none;
+	padding: 0 60px;
+	
+}
+.navbar ul li a
+{
+	text-decoration: none;
+	color: #000;
+	font-family: 'Poppins';
+}
+.profile
+{
+	margin-top: 76px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100vh;
+	text-align: center;
+	display: block;
+	width: 600px;
+	
+}
+@media only screen and (max-width: 600px)
+{
+	.profile
+	{
+		width: 100%;
+	}
+}
+
+#profile-img
+{
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.job 
+{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+}
+.office-name
+{
+   font-size: 15px;
+	font-weight: 400;	
+	line-height: 0.5;
+}
+#btn{
+  background: linear-gradient(to top right, #8162CE, #00AAFF);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  height:40px;
+  color: white;
+  margin-top: 10px;
+  padding: 8px 11px;
+} 
+.wrapper {
+  display: block;
+}
+
+
+
+#btn-facebook:hover  
+{
+	background-color: #3b5998;
+	color: white;
+}
+#btn-instagram:hover 
+{
+	background-image: linear-gradient(to right,#E1306C,#FCAF45,#833AB4);
+	color: white;
+}
+#btn-gmail:hover 
+{
+	background-color:#B23121;
+	color: white;
+}
+#btn-twitter:hover 
+{
+	background-color:#1DA1F2;
+	color: white;
+}
+#btn-whatsapp:hover 
+{
+	background-color:#4FCE5D;
+	color: white;
+}
+#btn-youtube:hover 
+{
+	background-color: #FF0000;
+	color: white;
+}
+.button:hover .fa-facebook
+{
+color: white;
+}
+.button:hover .fa-envelope-square
+{
+color: white;
+}
+.button:hover .fa-instagram
+{
+color: white;
+}
+.button:hover .fa-twitter
+{
+color: white;
+}
+.button:hover .fa-whatsapp
+{
+color: white;
+}
+.button:hover .fa-youtube
+{
+color: white;
+}
+
+.fa-facebook 
+{
+	font-size: 30px;
+	float: left;
+	color: #3b5998;
+	margin-right: 9px;
+}
+.fa-youtube 
+{
+	font-size: 30px;
+	float: left;
+	color: #FF0000;
+	margin-right: 9px;
+}
+.fa-twitter 
+{
+	font-size: 30px;
+	float: left;
+	color: #1DA1F2;
+	margin-right: 9px;
+}
+.fa-envelope-square
+{
+	font-size: 30px;
+	float: left;
+	color: #B23121;
+	margin-right: 9px;
+}
+.fa-instagram 
+{
+	font-size: 30px;
+	float: left;
+	color: red;
+	margin-right: 9px;
+}
+.fa-whatsapp 
+{
+	font-size: 30px;
+	float: left;
+	color: #4FCE5D;
+	margin-right: 9px;
+}
+.button
+{
+	text-align: left;
+	color: black;
+	text-decoration: none;
+	font-family: 'Poppins Regular';
+	font-size: 18px;
+	font-weight: 500;
+	display: block;
+	padding: 10px;
+	margin: 7px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+}
+.button a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.button:hover a
+{
+	color: white;
+}
+
+
+
+
+
+
+

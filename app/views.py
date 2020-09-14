@@ -5,9 +5,33 @@ from app.models import User,Order,UserLogin,Profile
 from app.forms.orderform import OrderForm
 from app.forms.userform import UserForm
 from app.forms.profileform import ProfileForm
+import vobject
+
 # Create your views here.
 
+def _vcard_string(profile):
+    v = vobject.vCard()
+    v.add('n')
+    v.n.value = vobject.vcard.Name(family=profile.fullname, given=profile.fullname)
+    v.add('fn')
+    v.fn.value = "%s %s" % (profile.fullname, profile.fullname)
+    v.add('email')
+    v.email.value = profile.email
+    v.add('tel')
+    v.tel.value = profile.contact
+    v.tel.type_param = 'WORK'
+    v.add('url')
+    v.url.value = profile.website
+    output = v.serialize()
+    return output
 
+def vcard(request,id):
+    profile = Profile.objects.get(id=id)
+    output = _vcard_string(profile)
+    filename = "%s%s.vcf" % (profile.fullname, profile.fullname)
+    response = HttpResponse(output, content_type="text/x-vCard")
+    response['Content-Disposition'] = 'attachment; filename=%s' % filename
+    return response
 
 def adminlogin(request):
 	return render(request,'adminlogin.html')

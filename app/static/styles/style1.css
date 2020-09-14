@@ -11,7 +11,7 @@
 {
 	list-style: none;
 	padding: 0 60px;
-	
+
 }
 .navbar ul li a
 {
@@ -21,7 +21,7 @@
 }
 .profile
 {
-	margin-top: 76px;
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 100vh;
@@ -37,7 +37,21 @@
 		width: 100%;
 	}
 }
-
+.name
+{
+	font-family: "Playfair";
+	font-weight: 700;
+}
+.job
+{
+	font-family: "Alegreya";
+	font-weight: 500;
+}
+.add
+{
+	font-family: "Alegreya";
+	font-weight: 600;
+}
 #profile-img
 {
 	width: 130px;
@@ -49,12 +63,7 @@
 
 }
 
-.job 
-{
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1;
-}
+
 .office-name
 {
    font-size: 15px;
@@ -71,141 +80,85 @@
   margin-top: 10px;
   padding: 8px 11px;
 } 
-.wrapper {
-  display: block;
-}
-
-
-
-#btn-facebook:hover  
+.contact-style
 {
-	background-color: #3b5998;
-	color: white;
+background: #5DD55D;
+width: 80px;
+border: none; 
+height: 40px; 
+border-radius: 25px; 
+outline: none;
 }
-#btn-instagram:hover 
+.fa-phone-alt
 {
-	background-image: linear-gradient(to right,#E1306C,#FCAF45,#833AB4);
-	color: white;
+	color: white; font-size: 24px; 
 }
-#btn-gmail:hover 
+.website-style
 {
-	background-color:#B23121;
-	color: white;
+background: #1380BA;
+width: 80px;
+border: none; 
+height: 40px; 
+border-radius: 25px; 
+outline: none;
 }
-#btn-twitter:hover 
+.fa-globe
 {
-	background-color:#1DA1F2;
-	color: white;
+	color: white; font-size: 24px; 
 }
-#btn-whatsapp:hover 
+.gmail-style
 {
-	background-color:#4FCE5D;
-	color: white;
-}
-#btn-youtube:hover 
-{
-	background-color: #FF0000;
-	color: white;
-}
-.button:hover .fa-facebook
-{
-color: white;
-}
-.button:hover .fa-envelope-square
-{
-color: white;
-}
-.button:hover .fa-instagram
-{
-color: white;
-}
-.button:hover .fa-twitter
-{
-color: white;
-}
-.button:hover .fa-whatsapp
-{
-color: white;
-}
-.button:hover .fa-youtube
-{
-color: white;
-}
-
-.fa-facebook 
-{
-	font-size: 30px;
-	float: left;
-	color: #3b5998;
-	margin-right: 9px;
-}
-.fa-youtube 
-{
-	font-size: 30px;
-	float: left;
-	color: #FF0000;
-	margin-right: 9px;
-}
-.fa-twitter 
-{
-	font-size: 30px;
-	float: left;
-	color: #1DA1F2;
-	margin-right: 9px;
+background: #B23121;
+width: 80px;
+border: none; 
+height: 40px; 
+border-radius: 25px; 
+outline: none;
 }
 .fa-envelope-square
 {
-	font-size: 30px;
-	float: left;
-	color: #B23121;
-	margin-right: 9px;
+	color: white; font-size: 24px; 
 }
-.fa-instagram 
+.facebook
 {
-	font-size: 30px;
-	float: left;
-	color: red;
-	margin-right: 9px;
-}
-.fa-whatsapp 
-{
-	font-size: 30px;
-	float: left;
-	color: #4FCE5D;
-	margin-right: 9px;
-}
-.button
-{
-	text-align: left;
-	color: black;
-	text-decoration: none;
-	font-family: 'Poppins Regular';
-	font-size: 18px;
-	font-weight: 500;
-	display: block;
-	padding: 10px;
-	margin: 7px;
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	border: none;
+	background: #3b5998; 
+	width: 67px; 
+	border: none; 
+	height: 41px; 
+	border-radius: 15px; 
 	outline: none;
-	border-radius: 12px;
 }
-.button a
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube
 {
-	color: black;
-	text-decoration: none;
+	color: white; font-size: 24px;
 }
-
-.button:hover a
+.instagram
 {
-	color: white;
+	background-image: linear-gradient(to right,#E1306C,#FCAF45,#833AB4); 
+	outline: none; 
+	width: 67px; 
+	border: none; 
+	height: 41px; 
+	border-radius: 15px;
 }
-
-
-
-
+.twitter
+{
+	background: #1DA1F2; 
+	outline: none; 
+	width: 67px; 
+	border: none; 
+	height: 41px; 
+	border-radius: 15px
+}
+.youtube
+{
+	background: #FF0000; 
+	outline: none; 
+	width: 67px; 
+	border: none; 
+	height: 41px; 
+	border-radius: 15px;
+}
 
 
 

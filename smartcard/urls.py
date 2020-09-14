@@ -36,4 +36,7 @@ urlpatterns = [
     path('check',views.check),
     path('profiledetail',views.profiledetail),
     path('addprofile',views.addprofile),
+    path('vcard/<int:id>',views.vcard),
+
 ]
+
